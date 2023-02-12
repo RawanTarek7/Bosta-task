@@ -67,7 +67,7 @@ export const Search = (props: any) => {
         props.setData(shipmentDetails)
         props.hasError(error)
         console.log('searchdata', shipmentDetails)
-    }, [shipmentDetails, error, trackingNumber]);
+    }, [shipmentDetails, error, trackingNumber,props]);
 
 
     const handleClose = () => {

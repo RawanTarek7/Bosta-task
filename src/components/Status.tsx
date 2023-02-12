@@ -22,7 +22,7 @@ export default function Status({details}: any) {
     const [statusDetails, setStatusDetails] = useState<ITracking>();
     const [transitEvents, setTransitEvents] = useState<TransitEvent>();
     const [status, setStatus] = useState('');
-    const deliverToSender = statusDetails && statusDetails.CurrentStatus.state == 'DELIVERED_TO_SENDER';
+    const deliverToSender = statusDetails && statusDetails.CurrentStatus.state === 'DELIVERED_TO_SENDER';
     const language = useSelector((state: any) => state.language);
 
     const date = new Date(Date.UTC(2020, 7, 20, 16, 34, 55, 150));
@@ -51,7 +51,7 @@ export default function Status({details}: any) {
         console.log('arabic', (arabic.toLocaleString('ar-EG', {timeZone: 'UTC'})))
 
 
-        if (statusDetails && statusDetails.CurrentStatus.state == 'DELIVERED') {
+        if (statusDetails && statusDetails.CurrentStatus.state === 'DELIVERED') {
             if (language === 'ar') {
 
                 const state = t('DELIVERED') + t('order_is')
@@ -68,7 +68,7 @@ export default function Status({details}: any) {
         }
 
 
-    }, [details, statusDetails, status, t]);
+    }, [details, statusDetails, status, language, t]);
 
 
     return (
@@ -163,7 +163,7 @@ export default function Status({details}: any) {
 
                     <Typography> {t("ACTIVITY_LOG")}</Typography>
                 </Grid>
-                <Grid item dir={language==="ar"?'rtl':'lrt'}>
+                <Grid item dir={language === "ar" ? 'rtl' : 'lrt'}>
                     <Stepper
 
                         activeStep={0}

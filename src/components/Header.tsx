@@ -7,7 +7,6 @@ import English from '../images/icons8-usa-48.png'
 import {Box, Typography} from "@mui/material";
 import {useSelector, useDispatch} from 'react-redux';
 import {useEffect} from "react";
-import {useTranslation} from "react-i18next";
 import i18n from "i18next";
 
 
@@ -38,7 +37,7 @@ export default function Header() {
             position="static">
 
             {
-                language == 'en' ?
+                language === 'en' ?
                     (<img
                             width={125}
                             height={55}
@@ -63,21 +62,21 @@ export default function Header() {
                     cursor: "pointer"
                 }}
                 onClick={() => {
-                    handleLanguageChange(language == 'en' ? 'ar' : 'en')
+                    handleLanguageChange(language === 'en' ? 'ar' : 'en')
                 }
                 }>
                 <Typography style={{
                     color: "#E30613",
                     marginInlineEnd: 5,
                 }} fontWeight={600} variant="h6" component="h6">
-                    {language == 'en' ? 'AR' : 'EN'}
+                    {language === 'en' ? 'AR' : 'EN'}
                 </Typography>
 
                 <img width={40} height={40}
                      style={{
                          marginInlineEnd: 15,
                      }} alt={'language'}
-                     src={language == 'en' ? Arabic : English}/>
+                     src={language === 'en' ? Arabic : English}/>
 
             </Box>
 

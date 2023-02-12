@@ -61,9 +61,8 @@ export default function Home() {
     const [trackingNo, setTrackingNo] = useState('')
     const {t} = useTranslation();
 
-
     const theme = useTheme();
-    const [value, setValue] = React.useState(0);
+    const [value] = React.useState(0);
 
 
     const transitionDuration = {
