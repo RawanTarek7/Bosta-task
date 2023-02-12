@@ -1,0 +1,44 @@
+/*@font-face {*/
+/*  font-family: "CairoRegular";   !*Can be any text*!*/
+/*  src: local("Cairo-Regular"),*/
+/*  url("./fonts/cairo/Cairo-Regular.ttf") format("ttf");*/
+/*}*/
+
+/*@font-face {*/
+/*  font-family: "CairoBold";   !*Can be any text*!*/
+/*  src: local("Cairo-Bold"),*/
+/*  url("./fonts/cairo/Cairo-Bold.ttf") format("ttf");*/
+/*}*/
+/*@font-face {*/
+/*  font-family: "CairoSemiBold";   !*Can be any text*!*/
+/*  src: local("Cairo-SemiBold"),*/
+/*  url("./fonts/cairo/Cairo-SemiBold.ttf") format("ttf");*/
+/*}*/
+
+
+body {
+    margin: 0;
+    font-family: Cairo-Regular, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+input{
+    block-size: 300px;
+}
+
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 50px white inset; /* Change the color to your own background color */
+    -webkit-text-fill-color: #333;
+}
+
+input:-webkit-autofill:focus {
+    -webkit-box-shadow: 0 0 0 50px white inset; /*your box-shadow*/
+    -webkit-text-fill-color: #333;
+}

@@ -1,0 +1,20 @@
+{
+  "Track_shipment": "تتبع شحنتك",
+  "error_wrong_number": "لا يمكن العثور على أي سجل لرقم التتبع هذا في الوقت الحالي ، يرجى التحقق من الرقم والمحاولة مرة أخرى لاحقًا. لمزيد من المساعدة ، يرجى الاتصال بخدمة العملاء.",
+  "Error": "خطأ",
+  "ACTIVITY_LOG": "تفاصيل التتبع",
+  "Shipment_No": "رقم الشحنه {{ship}}",
+  "Shipment_No_label": " رقم الشحنه ",
+  "Last_update_days": "آخر تحديث منذ {{days}} ",
+  "order_is": " الأوردر  ",
+  "DELIVERED_TO_SENDER": "تم تسليمها للمرسل",
+  "Last_update": "آخر تحديث",
+  "Tracking_No": " رقم التتبع",
+  "TICKET_CREATED": "تم إنشاء تذكرة",
+  "IN_TRANSIT": "في مرحلة انتقالية",
+  "PACKAGE_RECEIVED": "تم استلام الطرد",
+  "NOT_YET_SHIPPED": "لم يتم شحنه بعد",
+  "DELIVERED": "تم توصيل",
+  "OUT_FOR_DELIVERY": "خارج للتوصيل",
+  "WAITING_FOR_CUSTOMER_ACTION": "في انتظار إجراء العميل"
+}

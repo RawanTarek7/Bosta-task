@@ -1,0 +1,20 @@
+{
+  "Track_shipment": "Track your shipment",
+  "error_wrong_number": "No record of this tracking number can be found at this time, please check the number and try again later. For further assistance, please contact Customer Service",
+  "Error": "Error",
+  "ACTIVITY_LOG": "ACTIVITY LOG",
+  "Shipment_No": "Shipment No {{ship}}",
+  "Last_update_days":"Last update since {{days}}  ",
+  "Shipment_No_label": " Shipment No ",
+  "order_is": " Package ",
+  "Last_update": "Last update",
+"DELIVERED_TO_SENDER": "DELIVERED TO SENDER",
+  "Tracking_No": " Tracking No",
+  "TICKET_CREATED": "TICKET CREATED",
+  "IN_TRANSIT": "IN TRANSIT",
+  "PACKAGE_RECEIVED": "PACKAGE RECEIVED",
+  "NOT_YET_SHIPPED": "NOT YET SHIPPED",
+  "DELIVERED": "Delivered",
+  "OUT_FOR_DELIVERY": "OUT FOR DELIVERY",
+  "WAITING_FOR_CUSTOMER_ACTION": "WAITING_FOR_CUSTOMER_ACTION"
+}
