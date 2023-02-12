@@ -68,7 +68,7 @@ export default function Status({details}: any) {
         }
 
 
-    }, [details, statusDetails, status, language, t]);
+    }, [details,deliverToSender, statusDetails, status, language, t]);
 
 
     return (

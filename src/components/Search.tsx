@@ -49,7 +49,7 @@ export const Search = (props: any) => {
                 props.hasError(error)
 
             })
-            .catch((err) => {
+            .catch((er) => {
                 setError(true)
                 setOpen(false)
                 props.hasError(error)
@@ -67,7 +67,7 @@ export const Search = (props: any) => {
         props.setData(shipmentDetails)
         props.hasError(error)
         console.log('searchdata', shipmentDetails)
-    }, [shipmentDetails, error, trackingNumber,props]);
+    }, [shipmentDetails, error, trackingNumber, props]);
 
 
     const handleClose = () => {
@@ -96,7 +96,7 @@ export const Search = (props: any) => {
                             }}
                             color="error"
                             onChange={(newValue) => setTrackingNumber(newValue.target.value)}
-                            onKeyPress={(ev) => {
+                            onKeyDown={(ev) => {
                                 if (ev.key === 'Enter') {
                                     handleClickSearch()
                                 }
@@ -115,7 +115,7 @@ export const Search = (props: any) => {
                                             borderRadius: 0,
                                         }}
                                         style={styles.iconButton}
-                                        disabled={trackingNumber.length == 0}
+                                        disabled={trackingNumber.length === 0}
                                         onClick={handleClickSearch}
                                         onMouseDown={handleMouseDownSearch}
                                         edge="end">
